@@ -21,6 +21,8 @@ header {
 }
 
 .logo {
+    position: relative;
+    z-index: 4;
     font-size: 40px;
 }
 
@@ -115,7 +117,7 @@ a.btn-header {
 .about {
     background-color: #1b1818;
     padding: 50px 250px;
-    height: 400px;
+    height: 440px;
     display: flex;
     gap: 60px;
 }
@@ -124,7 +126,7 @@ a.btn-header {
     background-color: #c5b249;
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
-    box-shadow: 20px 20px 40px #c5b249;
+    box-shadow: inset 20px 20px 100px #1b1818;
 }
 
 .image img {
@@ -196,6 +198,14 @@ a.btn-header {
     text-align: center;
 }
 
+.testimonial .stars{
+color: #c5b249;
+}
+
+.stars i{
+    font-size: 10px;
+}
+
 .cards {
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -253,7 +263,7 @@ a.btn-header {
 }
 
 .paginate a span {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -267,12 +277,12 @@ a.btn-header {
 
 .paginate a:nth-child(1) span {
     position: relative;
-    right: 20px;
+    right: 25px;
 }
 
 .paginate a:nth-child(2) span {
     position: relative;
-    left: 20px;
+    left: 25px;
 }
 
 .portefolio {
@@ -507,7 +517,7 @@ a.browse {
     width: 100%;
     text-align: center;
     
-    box-shadow: 4px 4px 20px #080711;
+    box-shadow: inset 4px 4px 20px #756e0b;
 }
 
 .card-image-pricing {
@@ -691,10 +701,140 @@ a.browse {
     height: 200px;
 }
 
+.contact{
+    padding: 50px 150px;
+    height: 310px;
+    background-color: #1b1818;
+    display: flex;
+    gap:20px;
+}
+
+.contact .contacts{
+    width: 30%;
+}
+
+
+
+.contacts p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contacts .title{
+    margin-top:0;
+}
+
+.forms{
+    background-color: #2a2626;
+    color: #fff;
+    width: 70%;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.social-rodape {
+    display: flex;
+    gap: 15px;
+}
+
+.social-rodape a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.social-rodape a:hover {
+    background-color: #c5b249;
+    color: #000;
+}
+
+.social-rodape a.active {
+    background-color: #c5b249;
+    color: #000;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    gap: 10px;
+}
+
+.row div:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.row div:nth-child(2){
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.row div:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.row .col-md-6{
+width: 50%;
+}
+
+.row .col-md-12{  
+    width: 100%;
+}
+
+form{
+    margin-top: 30px;
+}
+
+form input:first-child{
+    width: 310px;
+    height: 40px;
+    border: 1px solid #1b1818;
+    padding: 0 10px;
+    background-color: #1b1818;
+}
+
+form textarea{
+    width: 660px;
+    padding: 10px 10px;
+    background-color: #1b1818;
+    border: 1px solid #1b1818;
+}
+
+button.button{
+    background-color: #c5b249;
+    position: relative;
+    bottom: 30%;
+    left: 85%;
+    padding: 20px 20px;
+    box-shadow: inset 10px 10px 40px #73692f;
+    border: none;
+}
+
+
 footer{
     background-color: #2a2626;
     padding: 10px;
-    box-shadow: 4px 4px 20px #080711;
+    /*box-shadow: 4px 4px 20px #080711;*/
+    box-shadow: inset 4px 4px 20px #080711;
 }
 
 footer p{
